@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+#navbar {
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.07),
+    0 -3px 7px 1px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-size: 30px;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-balance {
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.collection-stat {
+  font-weight: 500;
+}
+
+.collection-description {
+  font-size: 14px;
+  font-style: italic;
+}

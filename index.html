@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gem run game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">Криптокошелек</a>
+      <ul>
+        <li class="nav-balance">
+          Баланс <span id="total-balance">0</span>&hairsp;$
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+      <div>
+        <h2>Добавить эфиров</h2>
+        <p class="collection-description">
+          1 ETH стоит 3&thinsp;000&hairsp;$
+        </p>
+        <button
+          id="add-eth"
+          class="m-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+        >
+          <svg
+            class="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>Добавить ETH</span>
+        </button>
+        <p id="eth-balance" class="collection-stat">0 ETH в кошельке</p>
+      </div>
+      <div>
+        <h2>Добавить битков</h2>
+        <p class="collection-description">
+          1&thinsp;BTC стоит 50&thinsp;000&hairsp;$
+        </p>
+        <button
+          id="add-btc"
+          class="m-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+        >
+          <svg
+            class="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>Добавить BTC</span>
+        </button>
+        <p id="btc-balance" class="collection-stat">0 BTС в кошельке</p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="coin.js"></script>
+</html>
