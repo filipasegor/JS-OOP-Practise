@@ -76,24 +76,19 @@ class Wallet {
   }
 
   addCoin(coin){
-    return this.coins.push([ether, bitcoin])
-
+    this.coins.push([ether, bitcoin])
+    console.log(this.coins)
+    return;
   }
 
-  getBalance(){
-    return this.coins.forEach((coin) => {
-      return `${this.сoin.getValue()}`
+  getBalance() {
+    let summ = 0;
+    this.coins.forEach((x) => {
+      summ += x.getValue();
     });
+    return summ;
   }
-
-  // getValue(){
-  //   this.price * this.count
-  //   console.log("this.price * this.count")
-  //   return;
-  // }
 }
-
-
 
 
 const ether = new Ether();
